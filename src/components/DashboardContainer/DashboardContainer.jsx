@@ -46,12 +46,13 @@ export const DashboardContainer = props => {
   * @params {Object}
   */
   const handleUpdate = data => {
+    toggleModal(false);
     updateMaintenance(dispatch, {
       ...data,
       in_maintenance: 1,
       estimatedate: data?.estimatedate?.substring(0, 10),
       person: data?.person || "",
-    }).then(() => toggleModal(false));
+    });
   };
 
   return (

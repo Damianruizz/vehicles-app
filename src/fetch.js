@@ -1,4 +1,4 @@
-const vehiclesUrl = 'http://localhost:8000/api/vehicles';
+const vehiclesUrl = 'https://vehicles-api-node.herokuapp.com/api/vehicles';
 
 /**
 * @desc generic request for the API
